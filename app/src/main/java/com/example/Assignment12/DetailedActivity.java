@@ -1,4 +1,4 @@
-package com.example.Day12Examples;
+package com.example.Assignment12;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.Day12Examples.R;
+import com.example.Assignment12.R;
 
 public class DetailedActivity extends AppCompatActivity {
 
