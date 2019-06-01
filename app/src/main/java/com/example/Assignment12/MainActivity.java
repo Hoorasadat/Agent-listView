@@ -12,19 +12,19 @@ import java.io.Serializable;
 public class MainActivity extends AppCompatActivity {
 
     ListView lvCustomers;
-    ArrayAdapter<Customer> arrayAdapter;
-    CustomerDataSource source;
+    ArrayAdapter<Agent> arrayAdapter;
+    AgentDB source;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        source = new CustomerDataSource(this);
+        source = new AgentDB(this);
         lvCustomers = findViewById(R.id.lvCustomers);
-        arrayAdapter = new ArrayAdapter<Customer>(this,
+        arrayAdapter = new ArrayAdapter<Agent>(this,
                                                     android.R.layout.simple_list_item_1,
-                                                    source.getAllCustomers());
+                                                    source.getAllAgents());
         lvCustomers.setAdapter(arrayAdapter);
 
 
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Intent intent = new Intent(getApplicationContext(), DetailedActivity.class);
-                intent.putExtra("customer",
+                intent.putExtra("agent",
                                       (Serializable) lvCustomers.getItemAtPosition(position));
 
                 startActivity(intent);
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         arrayAdapter.clear();
-        arrayAdapter.addAll(source.getAllCustomers());
+        arrayAdapter.addAll(source.getAllAgents());
     }
 
     @Override
@@ -55,6 +55,6 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
 
         arrayAdapter.clear();
-        arrayAdapter.addAll(source.getAllCustomers());
+        arrayAdapter.addAll(source.getAllAgents());
     }
 }

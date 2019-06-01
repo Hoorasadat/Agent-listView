@@ -4,164 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.Assignment12.com.example.Day12Examples.DetailedActivity">
+    tools:context="com.example.Assignment12.DetailedActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="212dp"
-        android:layout_height="795dp"
-        android:layout_marginStart="13dp"
+        android:layout_width="216dp"
+        android:layout_height="529dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btnDelete"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-        <EditText
-            android:id="@+id/etcustomerID"
+        <TextView
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textIsSelectable="false"
-            android:textSize="24sp" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:isScrollContainer="true"
+            android:text="AgentId"
+            android:textSize="30sp" />
 
-        <EditText
-            android:id="@+id/etCustFirstName"
+        <TextView
+            android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textIsSelectable="false"
-            android:textSize="24sp" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:isScrollContainer="true"
+            android:text="AgtFirstName"
+            android:textSize="30sp" />
 
-        <EditText
-            android:id="@+id/etCustLastName"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textIsSelectable="false"
-            android:textSize="24sp" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:isScrollContainer="true"
+            android:text="AgtMiddleInitial"
+            android:textSize="30sp" />
 
-        <EditText
-            android:id="@+id/etCustAddress"
+        <TextView
+            android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textIsSelectable="false"
-            android:textSize="24sp" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:isScrollContainer="true"
+            android:text="AgtLastName"
+            android:textSize="30sp" />
 
-        <EditText
-            android:id="@+id/etCustCity"
+        <TextView
+            android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textIsSelectable="false"
-            android:textSize="24sp" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:isScrollContainer="true"
+            android:text="AgtBusPhone"
+            android:textSize="30sp" />
 
-        <EditText
-            android:id="@+id/etCustProv"
+        <TextView
+            android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textIsSelectable="false"
-            android:textSize="24sp" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:isScrollContainer="true"
+            android:text="AgtEmail"
+            android:textSize="30sp" />
 
-        <EditText
-            android:id="@+id/etCustPostal"
+        <TextView
+            android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textIsSelectable="false"
-            android:textSize="24sp" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:isScrollContainer="true"
+            android:text="AgtPosition"
+            android:textSize="30sp" />
 
-        <EditText
-            android:id="@+id/etCustCountry"
+        <TextView
+            android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textIsSelectable="false"
-            android:textSize="24sp" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:isScrollContainer="true"
+            android:text="AgencyId"
+            android:textSize="30sp" />
+    </LinearLayout>
 
-        <EditText
-            android:id="@+id/etCustHomePhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textIsSelectable="false"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/etCustBusPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textIsSelectable="false"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/etCustEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textIsSelectable="false"
-            android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="174dp"
+        android:layout_height="525dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="288dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <EditText
             android:id="@+id/etAgentId"
@@ -169,161 +122,78 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:duplicateParentState="false"
-            android:editable="false"
             android:ems="10"
             android:inputType="textPersonName"
-            android:textIsSelectable="false"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etAgtFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etAgtMiddleInitial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etAgtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etAgtBusPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etAgtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etAgtPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etAgencyId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
             android:textSize="24sp" />
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="245dp"
-        android:layout_height="798dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="20dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="customerID"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="CustFirstName"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="CustLastName"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="CustAddress"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="CustCity"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="CustProv"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="CustPostal"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="CustCountry"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="CustHomePhone"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="CustBusPhone"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="CustEmail"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:layout_marginBottom="15dp"
-            android:text="AgentId"
-            android:textSize="26sp" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btnUpdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginBottom="48dp"
-        android:text="Update"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
-
-    <Button
-        android:id="@+id/btnDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginBottom="53dp"
-        android:text="Delete"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnUpdate"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 </android.support.constraint.ConstraintLayout>

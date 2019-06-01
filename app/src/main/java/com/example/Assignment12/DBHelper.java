@@ -13,13 +13,13 @@ import java.io.OutputStream;
 public class DBHelper extends SQLiteOpenHelper {
 
     private static String dbName = "TravelExpertsSqlLite.db";
-    private static int version = 1; // will increase in newer versions of database
+    private static int version = 1;
     private static String dbPath = "/data/data/com.example.day12examples/databases/";
     private Context myContext;
 
     public DBHelper (Context myContext)
     {
-        super(myContext, dbName, null, version); // factory??????????
+        super(myContext, dbName, null, version);
         this.myContext = myContext;
     }
 
