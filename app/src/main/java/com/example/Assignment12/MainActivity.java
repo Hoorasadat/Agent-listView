@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 public class MainActivity extends AppCompatActivity {
 
-    ListView lvCustomers;
+    ListView lvAgents;
     ArrayAdapter<Agent> arrayAdapter;
     AgentDB source;
 
@@ -21,21 +21,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         source = new AgentDB(this);
-        lvCustomers = findViewById(R.id.lvAgents);
+        lvAgents = findViewById(R.id.lvAgents);
         arrayAdapter = new ArrayAdapter<Agent>(this,
                                                     android.R.layout.simple_list_item_1,
                                                     source.getAllAgents());
-        lvCustomers.setAdapter(arrayAdapter);
+        lvAgents.setAdapter(arrayAdapter);
 
 
 
-        lvCustomers.setOnItemClickListener(new AdapterView.OnItemClickListener( ) {
+        lvAgents.setOnItemClickListener(new AdapterView.OnItemClickListener( ) {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Intent intent = new Intent(getApplicationContext(), DetailedActivity.class);
                 intent.putExtra("agent",
-                                      (Serializable) lvCustomers.getItemAtPosition(position));
+                                      (Serializable) lvAgents.getItemAtPosition(position));
 
                 startActivity(intent);
             }
