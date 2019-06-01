@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         source = new AgentDB(this);
-        lvCustomers = findViewById(R.id.lvCustomers);
+        lvCustomers = findViewById(R.id.lvAgents);
         arrayAdapter = new ArrayAdapter<Agent>(this,
                                                     android.R.layout.simple_list_item_1,
                                                     source.getAllAgents());
